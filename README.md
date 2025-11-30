@@ -1,85 +1,88 @@
 # IponTracker: A Personal Finance Tracker
 Java OOP project by Real 3ggaz from Outer Space
 
-Description / Overview
+**Description / Overview**
 
-The IPON Tracker is a console-based Java application designed to help users manage their personal finances with a Savings-First approach.
-The system prioritizes savings before any other financial activity, ensuring users develop strong saving habits before recording expenses or setting financial goals.
+  The IPON Tracker is a console-based Java application designed to help users manage their personal finances with a Savings-First approach.
+
+  The system prioritizes savings before any other financial activity, ensuring users develop strong saving habits before recording expenses or setting financial goals.
 
 The program allows users to:
 
-  Create and manage multiple savings accounts
+  *Create and manage multiple savings accounts
 
-  Record expenses under a specific savings account
+  *Record expenses under a specific savings account
 
-  Set goals related to each savings account
+  *Set goals related to each savings account
 
-  View a complete hierarchical summary showing savings as the top priority
+  *View a complete hierarchical summary showing savings as the top priority
 
-  This project demonstrates a clean and well-structured application of Object-Oriented Programming (OOP) concepts.
+  *This project demonstrates a clean and well-structured application of Object-Oriented Programming (OOP) concepts.
 
-OOP Concepts Applied
-  a. Encapsulation
+**OOP Concepts Applied**
+  
+1. Encapsulation
 
-    All class fields are declared private to protect the data.
+    *All class fields are declared private to protect the data.
 
-    Access is controlled using getters and setters.
+    *Access is controlled using getters and setters.
 
-    Examples: balance, amount, goalAmount are private fields accessed safely through methods.
+    *Examples: balance, amount, goalAmount are private fields accessed safely through methods.
 
-b. Inheritance
+2. Inheritance
 
-    SavingsAccount, Expense, and Goal all inherit from the abstract superclass FinancialItem.
+    *SavingsAccount, Expense, and Goal all inherit from the abstract superclass FinancialItem.
 
-    Common attributes (id, description, date) and behaviors are reused through inheritance.
+    *Common attributes (id, description, date) and behaviors are reused through inheritance.
 
-c. Polymorphism
+2. Polymorphism
 
-    The displayDetails() method is defined abstractly in FinancialItem and overridden in each subclass.
+    *The displayDetails() method is defined abstractly in FinancialItem and overridden in each subclass.
 
-    When iterating through expenses or goals, the correct version of displayDetails() is automatically executed depending on the object’s type.
+    *When iterating through expenses or goals, the correct version of displayDetails() is automatically executed depending on the object’s type.
 
-d. Abstraction
+3. Abstraction
 
-    The FinancialItem class represents a general financial record.
+    *The FinancialItem class represents a general financial record.
 
-    It cannot be instantiated and serves only as a template for more specific financial item types.
+    *It cannot be instantiated and serves only as a template for more specific financial item types.
 
-e. Composition (Has-A Relationship)
+4. Composition (Has-A Relationship)
 
-    A SavingsAccount has expenses and goals.
+    *A SavingsAccount has expenses and goals.
 
-    This makes Savings the core structure of the program, reinforcing the savings-priority system.
+    *This makes Savings the core structure of the program, reinforcing the savings-priority system.
 
-Program Structure
-  Main Classes
+**Program Structure**
+  
+  *Main Classes*
 
-FinancialItem (abstract)
-Stores shared attributes: ID, description, date. Declares abstract displayDetails().
+1.FinancialItem (abstract)
+  *Stores shared attributes: ID, description, date. Declares abstract displayDetails().
 
-SavingsAccount (primary class)
+2.SavingsAccount (primary class)
 
-Contains balance, interest rate.
+  *Contains balance, interest rate.
 
-Contains lists of Expense and Goal objects.
+  *Contains lists of Expense and Goal objects.
 
-Provides methods for adding expenses, updating progress, and applying interest.
+  *Provides methods for adding expenses, updating progress, and applying interest.
 
-Expense
-Represents spending transactions linked to a SavingsAccount.
+3.Expense
+  *Represents spending transactions linked to a SavingsAccount.
 
-Goal
-Represents savings objectives, each belonging to a specific savings account.
+4.Goal
+  *Represents savings objectives, each belonging to a specific savings account.
 
-FinancialTracker (Main Program)
+5.FinancialTracker (Main Program)
 
-Handles user menu
+  *Handles user menu
 
-Manages Savings Accounts
+  *Manages Savings Accounts
 
-Enforces the rule: Savings must be created first before expense/goal actions
+  *Enforces the rule: Savings must be created first before expense/goal actions
 
-Class Relationship Diagram (Text-Based)
+**Class Relationship Diagram (Text-Based)**
                     +---------------------+
                     |   FinancialItem     |
                     |---------------------|
