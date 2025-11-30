@@ -1,61 +1,85 @@
 # IponTracker: A Personal Finance Tracker
 Java OOP project by Real 3ggaz from Outer Space
-**Description / Overview**
-  The IPON Tracker is a console-based Java application designed to help users manage their personal finances with a Savings-First approach.
-  
-  The system prioritizes savings before any other financial activity, ensuring users develop strong saving habits before recording expenses or setting financial goals.
-  
-  The program allows users to:
-    *Create and manage multiple savings accounts
-    *Record expenses under a specific savings account
-    *Set goals related to each savings account
-    *View a complete hierarchical summary showing savings as the top priority
-    *This project demonstrates a clean and well-structured application of Object-Oriented Programming (OOP) concepts.
-**OOP Concepts Applied**
+
+Description / Overview
+
+The IPON Tracker is a console-based Java application designed to help users manage their personal finances with a Savings-First approach.
+The system prioritizes savings before any other financial activity, ensuring users develop strong saving habits before recording expenses or setting financial goals.
+
+The program allows users to:
+
+  Create and manage multiple savings accounts
+
+  Record expenses under a specific savings account
+
+  Set goals related to each savings account
+
+  View a complete hierarchical summary showing savings as the top priority
+
+  This project demonstrates a clean and well-structured application of Object-Oriented Programming (OOP) concepts.
+
+OOP Concepts Applied
   a. Encapsulation
-    *All class fields are declared private to protect the data.
-    *Access is controlled using getters and setters.
-    *Examples: balance, amount, goalAmount are private fields accessed safely through methods.
 
-  b. Inheritance
-    *SavingsAccount, Expense, and Goal all inherit from the abstract superclass FinancialItem.
-    *Common attributes (id, description, date) and behaviors are reused through inheritance.
+    All class fields are declared private to protect the data.
 
-  c. Polymorphism
-    *The displayDetails() method is defined abstractly in FinancialItem and overridden in each subclass.
-    *When iterating through expenses or goals, the correct version of displayDetails() is automatically executed depending on the object’s type.
+    Access is controlled using getters and setters.
 
-  d. Abstraction
-    *The FinancialItem class represents a general financial record.
-    *It cannot be instantiated and serves only as a template for more specific financial item types.
+    Examples: balance, amount, goalAmount are private fields accessed safely through methods.
 
-  e. Composition (Has-A Relationship)
-    *A SavingsAccount has expenses and goals.
-    *This makes Savings the core structure of the program, reinforcing the savings-priority system.
+b. Inheritance
 
-**Program Structure**
-  *Main Classes*
+    SavingsAccount, Expense, and Goal all inherit from the abstract superclass FinancialItem.
 
-  FinancialItem (abstract)
-    *Stores shared attributes: ID, description, date. Declares abstract displayDetails().
+    Common attributes (id, description, date) and behaviors are reused through inheritance.
 
-  SavingsAccount (primary class)
-    *Contains balance, interest rate.
-    *Contains lists of Expense and Goal objects.
-    *Provides methods for adding expenses, updating progress, and applying interest.
+c. Polymorphism
 
-  Expense
-    *Represents spending transactions linked to a SavingsAccount.
+    The displayDetails() method is defined abstractly in FinancialItem and overridden in each subclass.
 
-  Goal
-    *Represents savings objectives, each belonging to a specific savings account.
+    When iterating through expenses or goals, the correct version of displayDetails() is automatically executed depending on the object’s type.
 
-  FinancialTracker (Main Program)
-    *Handles user menu
-    *Manages Savings Accounts
-    *Enforces the rule: Savings must be created first before expense/goal actions
+d. Abstraction
 
-   **CRD**
+    The FinancialItem class represents a general financial record.
+
+    It cannot be instantiated and serves only as a template for more specific financial item types.
+
+e. Composition (Has-A Relationship)
+
+    A SavingsAccount has expenses and goals.
+
+    This makes Savings the core structure of the program, reinforcing the savings-priority system.
+
+Program Structure
+  Main Classes
+
+FinancialItem (abstract)
+Stores shared attributes: ID, description, date. Declares abstract displayDetails().
+
+SavingsAccount (primary class)
+
+Contains balance, interest rate.
+
+Contains lists of Expense and Goal objects.
+
+Provides methods for adding expenses, updating progress, and applying interest.
+
+Expense
+Represents spending transactions linked to a SavingsAccount.
+
+Goal
+Represents savings objectives, each belonging to a specific savings account.
+
+FinancialTracker (Main Program)
+
+Handles user menu
+
+Manages Savings Accounts
+
+Enforces the rule: Savings must be created first before expense/goal actions
+
+Class Relationship Diagram (Text-Based)
                     +---------------------+
                     |   FinancialItem     |
                     |---------------------|
@@ -78,22 +102,25 @@ Java OOP project by Real 3ggaz from Outer Space
 | goals[]     |
 +-------------+
 
-**How to Run the Program**
-  Step 1 — Compile the Files
+How to Run the Program
+Step 1 — Compile the Files
 
-  Make sure all .java files are in the same folder.
-  Then run:
-  javac *.java
-  
-  Step 2 — Run the Program
-  java FinancialTracker
+Make sure all .java files are in the same folder.
+Then run:
 
-  Requirements
-  Java 8 or higher
-  Console/terminal environment
+javac *.java
 
-**Sample Output:**
-  === IPON TRACKER (SAVINGS-PRIORITY) ===
+Step 2 — Run the Program
+java FinancialTracker
+
+Requirements
+
+Java 8 or higher
+
+Console/terminal environment
+
+6. Sample Output
+=== IPON TRACKER (SAVINGS-PRIORITY) ===
 [1] Add Savings Account (Required First)
 [2] Add Expense to Savings
 [3] Add Goal to Savings
@@ -123,6 +150,7 @@ No expenses.
 No goals.
 -------------------------------------
 
+7. Author and Acknowledgement
 
-Author: Godoy,Marc Gerome M., Espeleta Dustin A., Gomba, Yuhan Benedict
+Author: [Your Name]
 Course: Object-Oriented Programming
