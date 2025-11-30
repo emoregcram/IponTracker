@@ -55,32 +55,35 @@ The program allows users to:
 
 **Program Structure**
   
-  *Main Classes*
+*Main Classes*
 
-1.FinancialItem (abstract)
-  *Stores shared attributes: ID, description, date. Declares abstract displayDetails().
+1. FinancialItem (abstract)
+  
+    *Stores shared attributes: ID, description, date. Declares abstract displayDetails().
 
-2.SavingsAccount (primary class)
+2. SavingsAccount (primary class)
 
-  *Contains balance, interest rate.
+    *Contains balance, interest rate.
 
-  *Contains lists of Expense and Goal objects.
+    *Contains lists of Expense and Goal objects.
 
-  *Provides methods for adding expenses, updating progress, and applying interest.
+    *Provides methods for adding expenses, updating progress, and applying interest.
 
-3.Expense
-  *Represents spending transactions linked to a SavingsAccount.
+3. Expense
 
-4.Goal
-  *Represents savings objectives, each belonging to a specific savings account.
+     *Represents spending transactions linked to a SavingsAccount.
 
-5.FinancialTracker (Main Program)
+5. Goal
 
-  *Handles user menu
+     *Represents savings objectives, each belonging to a specific savings account.
 
-  *Manages Savings Accounts
+7. FinancialTracker (Main Program)
 
-  *Enforces the rule: Savings must be created first before expense/goal actions
+    *Handles user menu
+
+    *Manages Savings Accounts
+
+    *Enforces the rule: Savings must be created first before expense/goal actions
 
 **Class Relationship Diagram (Text-Based)**
 
@@ -197,8 +200,7 @@ No goals.
 
 -------------------------------------
 
-7. Author and Acknowledgement
 
-Author: Espeleta, Dustin A., Godoy, Marc Gerome M., Gomba, Yuhan Benedict
+Authors: Espeleta, Dustin A., Godoy, Marc Gerome M., Gomba, Yuhan Benedict
 
 Course: Object-Oriented Programming
