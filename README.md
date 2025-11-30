@@ -199,6 +199,6 @@ No goals.
 
 7. Author and Acknowledgement
 
-Author: [Your Name]
+Author: Espeleta, Dustin A., Godoy, Marc Gerome M., Gomba, Yuhan Benedict
 
 Course: Object-Oriented Programming
