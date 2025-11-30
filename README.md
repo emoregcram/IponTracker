@@ -105,7 +105,7 @@ The program allows users to:
 | goals[]     |
 +-------------+
 
-How to Run the Program
+**How to Run the Program**
 Step 1 — Compile the Files
 
 Make sure all .java files are in the same folder.
@@ -122,38 +122,62 @@ Java 8 or higher
 
 Console/terminal environment
 
-6. Sample Output
+**Sample Output**
+
 === IPON TRACKER (SAVINGS-PRIORITY) ===
+
 [1] Add Savings Account (Required First)
+
 [2] Add Expense to Savings
+
 [3] Add Goal to Savings
+
 [4] View Summary
+
 [0] Exit
+
 Enter choice: 1
 
+
 Savings ID: SA01
+
 Description: Main Savings
+
 Balance: 5000
-Interest Rate: 2.5
+
+nterest Rate: 2.5
+
 Savings account added successfully!
+
 
 === OVERALL SUMMARY (SAVINGS PRIORITY) ===
 
+
 === SAVINGS ACCOUNT (PRIORITY) ===
+
 ID: SA01
+
 Description: Main Savings
+
 Date: 2025-11-27
+
 Balance: ₱5000.0
+
 Interest Rate: 2.5%
 
+
 --- EXPENSES UNDER THIS SAVINGS ---
+
 No expenses.
 
 --- GOALS UNDER THIS SAVINGS ---
+
 No goals.
+
 -------------------------------------
 
 7. Author and Acknowledgement
 
 Author: [Your Name]
+
 Course: Object-Oriented Programming
