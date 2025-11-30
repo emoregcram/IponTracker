@@ -77,7 +77,7 @@ The program allows users to:
 
      *Represents savings objectives, each belonging to a specific savings account.
 
-7. FinancialTracker (Main Program)
+7. FinancialTracker (Main Class)
 
     *Handles user menu
 
