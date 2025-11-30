@@ -130,9 +130,11 @@ The program allows users to:
       +-------------+
 
 **How to Run the Program**
+
 Step 1 — Compile the Files
 
 Make sure all .java files are in the same folder.
+
 Then run:
 
 javac *.java
