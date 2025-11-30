@@ -83,26 +83,47 @@ The program allows users to:
   *Enforces the rule: Savings must be created first before expense/goal actions
 
 **Class Relationship Diagram (Text-Based)**
+
                     +---------------------+
+                    
                     |   FinancialItem     |
+                    
                     |---------------------|
+                    
                     | id                  |
+                    
                     | description         |
+                   
                     | date                |
+                    
                     |---------------------|
+                   
                     | +displayBasicInfo() |
+                    
                     | +displayDetails()   |
+                   
                     +---------+-----------+
+                             
                               |
+       
        -------------------------------------------------
+       
        |                      |                        |
+
 +-------------+     +----------------+        +----------------+
+
 | SavingsAcct |     |    Expense     |        |      Goal      |
+
 |-------------|     |----------------|        |----------------|
+
 | balance     |     | amount         |        | goalAmount     |
+
 | interest    |     | category       |        | currentProgress|
+
 | expenses[]  |     +----------------+        +----------------+
+
 | goals[]     |
+
 +-------------+
 
 **How to Run the Program**
