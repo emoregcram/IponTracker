@@ -110,21 +110,21 @@ The program allows users to:
        
        |                      |                        |
 
-+-------------+     +----------------+        +----------------+
+  +-------------+     +----------------+        +----------------+
 
-| SavingsAcct |     |    Expense     |        |      Goal      |
+  | SavingsAcct |     |    Expense     |        |      Goal      |
 
-|-------------|     |----------------|        |----------------|
+  |-------------|     |----------------|        |----------------|
 
-| balance     |     | amount         |        | goalAmount     |
+  | balance     |     | amount         |        | goalAmount     |
 
-| interest    |     | category       |        | currentProgress|
+  | interest    |     | category       |        | currentProgress|
 
-| expenses[]  |     +----------------+        +----------------+
+  | expenses[]  |     +----------------+        +----------------+
 
-| goals[]     |
+  | goals[]     |
 
-+-------------+
+  +-------------+
 
 **How to Run the Program**
 Step 1 — Compile the Files
